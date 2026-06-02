@@ -1,4 +1,4 @@
-# korean-med-mcp
+# 한국 의료 MCP
 
 [![npm version](https://img.shields.io/npm/v/korean-med-mcp)](https://www.npmjs.com/package/korean-med-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
@@ -99,11 +99,11 @@ Claude: (search_cancer_info 호출) 국가암정보센터 갑상선암 정보...
 
 ##### 건강보험심사평가원 (HIRA) — `find_hospital`, `find_pharmacy`, `get_drug_usage_by_area`, `get_drug_usage_by_disease`
 
-| 서비스명 | 검색 키워드 | 필요 도구 |
-|---------|-----------|---------|
-| 건강보험심사평가원_병원정보서비스 v2 | `병원정보서비스` | `find_hospital` |
-| 건강보험심사평가원_약국정보서비스 | `약국정보서비스` | `find_pharmacy` |
-| 건강보험심사평가원_의약품사용정보조회서비스 v1.2 | `의약품사용정보조회` | `get_drug_usage_by_area`, `get_drug_usage_by_disease` |
+| 서비스명 | 검색 키워드 | 필요 도구 | 링크 |
+|---------|-----------|---------|---------|
+| 건강보험심사평가원_병원정보서비스 v2 | `병원정보서비스` | `find_hospital` | [link](https://www.data.go.kr/data/15001698/openapi.do)
+| 건강보험심사평가원_약국정보서비스 | `약국정보서비스` | `find_pharmacy` | [link](https://www.data.go.kr/data/15001673/openapi.do)
+| 건강보험심사평가원_의약품사용정보조회서비스 v1.2 | `의약품사용정보조회` | `get_drug_usage_by_area`, `get_drug_usage_by_disease` | [link](https://www.data.go.kr/data/15047819/openapi.do)
 
 > **활용신청 경로**: data.go.kr 로그인 → 검색창에 서비스명 입력 → 해당 서비스 클릭 → **"활용신청"** 버튼
 
@@ -115,11 +115,11 @@ Claude: (search_cancer_info 호출) 국가암정보센터 갑상선암 정보...
 
 ##### 식품의약품안전처 (MFDS) — `search_drug`, `identify_pill`, `search_drug_patent`
 
-| 서비스명 | 검색 키워드 | 필요 도구 |
-|---------|-----------|---------|
-| 식품의약품안전처_의약품 제품 허가정보 | `의약품제품허가정보` | `search_drug` |
-| 식품의약품안전처_의약품 낱알식별 정보 | `낱알식별` | `identify_pill` |
-| 식품의약품안전처_의약품특허정보서비스 | `의약품특허정보` | `search_drug_patent` |
+| 서비스명 | 검색 키워드 | 필요 도구 | 링크 |
+|---------|-----------|---------|---------|
+| 식품의약품안전처_의약품 제품 허가정보 | `의약품제품허가정보` | `search_drug` | [link](https://www.data.go.kr/data/15095677/openapi.do)
+| 식품의약품안전처_의약품 낱알식별 정보 | `낱알식별` | `identify_pill` | [link](https://www.data.go.kr/data/15057639/openapi.do)
+| 식품의약품안전처_의약품특허정보서비스 | `의약품특허정보` | `search_drug_patent` | [link](https://www.data.go.kr/data/15057623/openapi.do)
 
 ##### 국가암정보센터 — 암 관련 6개 도구
 
