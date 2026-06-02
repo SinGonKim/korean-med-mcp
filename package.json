@@ -1,0 +1,58 @@
+{
+  "name": "korean-med-mcp",
+  "version": "1.0.0",
+  "description": "한국 공공 의료 OpenAPI(HIRA·NMC·MFDS·KDCA·법제처)를 통합한 MCP 서버. 병원·약국 찾기, 응급실 현황, 의약품 정보, DUR, 의료법령·판례 조회",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "korean-med-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "node --max-old-space-size=8192 node_modules/typescript/bin/tsc",
+    "watch": "tsc --watch",
+    "start": "node build/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:integration": "vitest run src/__tests__/integration/",
+    "inspect": "tsc && npx @modelcontextprotocol/inspector node ./build/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "korean-medical",
+    "한국의료",
+    "병원찾기",
+    "의약품",
+    "응급실",
+    "hira",
+    "mfds",
+    "kdca",
+    "claude",
+    "model-context-protocol"
+  ],
+  "author": "SinGonKim",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "@xmldom/xmldom": "^0.9.8",
+    "commander": "^14.0.3",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.19.3",
+    "typescript": "^5.9.3",
+    "vitest": "^2.0.0"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
