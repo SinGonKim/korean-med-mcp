@@ -9,8 +9,6 @@
 
 > 한국 공공 의료 OpenAPI를 하나의 MCP 서버로 통합. 병원·약국 찾기, 응급실 실시간 현황, 의약품 정보, 의약품 특허·사용통계, 의료법령·판례, 암 정보까지.
 
-**같은 제작자 시리즈**: [korean-law-mcp](https://github.com/SinGonKim/korean-law-mcp) — 한국 법령·판례 MCP
-
 ---
 
 ## 데모
